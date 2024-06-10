@@ -18,67 +18,185 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header></header>
     <main>
-      <section class="document">
-        <div>
-          <ul class="document-list">
-            <li class="document-item">
-              <a class="document-item-link" href="">
-                <h2 class="document-item-title">єДокумент</h2>
-                <div class="document-item-info">
+      <section class="edocument">
+        <div class="swiper">
+          <ul class="edocument-list swiper-wrapper">
+            <li class="edocument-item swiper-slide">
+              <h2 class="edocument-item-title">єДокумент</h2>
+              <div class="edocument-item-info">
+                <img
+                  class="edocument-item-img"
+                  src="./img/my-photo.png"
+                  alt=""
+                />
+                <ul class="edocument-item-info-list">
+                  <li class="edocument-item-info-item">
+                    <p class="edocument-item-info-item-p">
+                      <span>
+                        Дата<br />
+                        народження:
+                      </span>
+                      11.07.2005
+                    </p>
+                  </li>
+                  <li class="edocument-item-info-item">
+                    <p class="edocument-item-info-item-p">
+                      <span>РНОКПП:</span> 3938508853
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="marquee-container">
+                <div class="marquee-e">
+                  <span
+                    >Документ діє під час дії воєнного стану. Ой у лузі червона
+                    калина похилилася, чогось наша славна Україна зажурилася. А
+                    ми тую червону калину підіймемо, А ми нашу славну Україну,
+                    гей-гей, розвеселимо!А ми тую червону калину підіймемо,А ми
+                    нашу славну Україну, гей-гей, розвеселимо!
+                  </span>
+                </div>
+              </div>
+              <div class="edocument-item-footer">
+                <p class="edocument-item-footer-p">
+                  Павленко <br />
+                  Владислав <br />
+                  Михайлович
+                </p>
+                <button class="edocument-item-btn">
                   <img
-                    class="document-item-img"
-                    src="./img/my-photo.png"
+                    class="edocument-item-btn-img"
+                    src="./img/more.png"
+                    alt=""
+                    width="28"
+                    height="28"
+                  />
+                </button>
+              </div>
+            </li>
+            <li class="rdocument-item swiper-slide">
+              <div class="rdocument-item-info">
+                <h2 class="rdocument-item-title">Картка платника податків</h2>
+                <p class="rdocument-rnokpp">РНОКПП</p>
+                <p class="rdocument-pip">
+                  Павленко <br />
+                  Владислав <br />
+                  Михайлович
+                </p>
+                <p class="rdocument-data">
+                  Дата народження: <br />
+                  11.07.2005
+                </p>
+              </div>
+              <div class="marquee-container">
+                <div class="marquee-r">
+                  <span
+                    >Документ оновлено о 11.16 | 08.06.2024 &#183; Перевірено
+                    Державною податковою службою &#183; Документ оновлено о
+                    11.16 | 08.06.2024 &#183; Перевірено Державною податковою
+                    службою &#183; Документ оновлено о 11.16 | 08.06.2024 &#183;
+                    Перевірено Державною податковою службою &#183; Документ
+                    оновлено о 11.16 | 08.06.2024 &#183; Перевірено Державною
+                    податковою службою &#183; Документ оновлено о 11.16 |
+                    08.06.2024 &#183; Перевірено Державною податковою службою
+                    &#183;
+                  </span>
+                </div>
+              </div>
+              <div class="rdocument-footer">
+                <p class="rdocument-footer-title">3938508853</p>
+                <button class="rdocument-btn-copy">
+                  <img
+                    class="rdocument-btn-img-copy"
+                    src="./img/copy.png"
+                    alt=""
+                    width="22px"
+                  />
+                </button>
+                <button class="rdocument-btn-more">
+                  <img
+                    class="rdocument-btn-img-more"
+                    src="./img/more.png"
                     alt=""
                   />
-                  <ul class="document-item-info-list">
-                    <li class="document-item-info-item">
-                      <p class="document-item-info-item-p">
-                        <span>
-                          Дата<br />
-                          народження:
-                        </span>
-                        11.07.2005
-                      </p>
-                    </li>
-                    <li class="document-item-info-item">
-                      <p class="document-item-info-item-p">
-                        <span>РНОКПП:</span> 3938508853
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="marquee-container">
-                  <div class="marquee">
-                    <span
-                      >Документ діє під час дії воєнного стану. Ой у лузі
-                      червона калина похилилася чогось наша славна Україна
-                      зажурилася</span
-                    >
-                  </div>
-                </div>
-                <div class="document-item-footer">
-                  <p class="document-item-footer-p">
-                    Павленко <br />
-                    Владислав <br />
-                    Михайлович
-                  </p>
-                  <button class="document-item-btn">
+                </button>
+              </div>
+            </li>
+            <li class="pdocument-item swiper-slide">
+              <h2 class="pdocument-item-title">Паспорт громадянина України</h2>
+              <div class="pdocument-item-info">
+                <img
+                  class="pdocument-item-img"
+                  src="./img/my-photo.png"
+                  alt=""
+                />
+                <ul class="pdocument-item-info-list">
+                  <li class="pdocument-item-info-item">
+                    <p class="pdocument-item-info-item-p">
+                      <span>
+                        Дата<br />
+                        народження:
+                      </span>
+                      11.07.2005
+                    </p>
+                  </li>
+                  <li class="pdocument-item-info-item">
+                    <p class="pdocument-item-info-item-p">
+                      <span>Номер:</span> 008015397
+                    </p>
+                  </li>
+                  <li class="pdocument-item-info-item">
                     <img
-                      class="document-item-btn-img"
-                      src="./img/more.png"
+                      class="pdocument-item-signature"
+                      src="./img/signature.png"
                       alt=""
-                      width="28"
-                      height="28"
+                      width="100"
                     />
-                  </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="marquee-container">
+                <div class="marquee-p">
+                  <span
+                    >Документ оновлено о 11.16 | 08.06.2024 &#183; Документ
+                    оновлено о 11.16 | 08.06.2024 &#183; Документ оновлено о
+                    11.16 | 08.06.2024 &#183; Документ оновлено о 11.16 |
+                    08.06.2024 &#183; Документ оновлено о 11.16 | 08.06.2024
+                    &#183; Документ оновлено о 11.16 | 08.06.2024 &#183;
+                    Документ оновлено о 11.16 | 08.06.2024 &#183; Документ
+                    оновлено о 11.16 | 08.06.2024 &#183; Документ оновлено о
+                    11.16 | 08.06.2024 &#183; Документ оновлено о 11.16 |
+                    08.06.2024 &#183; Документ оновлено о 11.16 | 08.06.2024
+                    &#183;
+                  </span>
                 </div>
-              </a>
+              </div>
+              <div class="pdocument-item-footer">
+                <p class="pdocument-item-footer-p">
+                  Павленко <br />
+                  Владислав <br />
+                  Михайлович
+                </p>
+                <button class="pdocument-item-btn">
+                  <img
+                    class="pdocument-item-btn-img"
+                    src="./img/more.png"
+                    alt=""
+                    width="28"
+                    height="28"
+                  />
+                </button>
+              </div>
             </li>
-            <li class="document-item">
+            <!-- <li class="document-item">
               <a class="document-item-link" href=""></a>
             </li>
             <li class="document-item">
@@ -86,14 +204,9 @@
             </li>
             <li class="document-item">
               <a class="document-item-link" href=""></a>
-            </li>
-            <li class="document-item">
-              <a class="document-item-link" href=""></a>
-            </li>
-            <li class="document-item">
-              <a class="document-item-link" href=""></a>
-            </li>
+            </li> -->
           </ul>
+          <!-- <div class="swiper-pagination"></div> -->
         </div>
       </section>
     </main>
@@ -147,5 +260,8 @@
         </ul>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./dia.js"></script>
   </body>
 </html>
